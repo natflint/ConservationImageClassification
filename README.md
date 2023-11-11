@@ -10,6 +10,10 @@ The lack of true colour images did bring up another issue. Because only about a 
  ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/3bfd6700-6bea-42ab-b7d1-8850735de3ec)
  ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/d2702f29-b64c-4995-b708-093bf6c579dc)
 
+# Implemenation and Network Architecture Comparison
 
+# Results
+
+# Investigation Using Grad-CAM
 
 
