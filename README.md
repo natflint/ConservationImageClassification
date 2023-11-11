@@ -5,18 +5,11 @@ The introduction of trap cameras to wildlife conservationist activities has allo
 The first thing we dealt with for manipulation was converting the one-hot encoded labels for the 8 possible classes to be categorically encoded, meaning all 0-7 labels were in the same column, “class”.  The categories and their corresponding numbers are as follows:  0 – antelope_duiker, 1 – bird, 2 – blank, 3 – civet_genet, 4 –  hog, 5 – leopard, 6 – monkey_prosimian, and 7 – rodent. This was done for the image classification architectures in the deep learning models in PyTorch.
 
 The lack of true colour images did bring up another issue. Because only about a fourth of all images were coloured, we did not think it would be a wise decision to fully train the model as if all of the images were RGB. So when creating our custom data loader for Pytorch, we decided to convert the images to grayscale. 
-<img src = "https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5" width= 200>
-
-
-Night image             |  obstructed Antelope Duiker
-:-------------------------:|:-------------------------:
-![](https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5)  |  ![](https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5)
-
 
 <p float="left">
-  <img src="https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5" width="100" />
-  <img src="https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5" width="100" /> 
-  <img src="https://github.com/natflint/ConservationImageClassification/assets/115076736/f6589f4a-8830-4bea-a16d-e86e3e4f11a2" width="100" />
+  <img src="https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5" />
+  <img src="https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5" /> 
+  <img src="https://github.com/natflint/ConservationImageClassification/assets/115076736/f6589f4a-8830-4bea-a16d-e86e3e4f11a2"/>
 </p>
 
 <figure>
