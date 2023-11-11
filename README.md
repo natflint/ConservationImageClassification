@@ -6,6 +6,11 @@ The first thing we dealt with for manipulation was converting the one-hot encode
 
 The lack of true colour images did bring up another issue. Because only about a fourth of all images were coloured, we did not think it would be a wise decision to fully train the model as if all of the images were RGB. So when creating our custom data loader for Pytorch, we decided to convert the images to grayscale. 
 <img src = "https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5" width= 200>
+
+<figure>
+  <img src="[path/to/your/image.jpg](https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5)" alt="Image Alt Text">
+  <figcaption>Caption: This is a description of the image.</figcaption>
+</figure>
  ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/84b8592a-b334-415d-95ad-7216005a45b5) *a night image with flash bounce back*
  ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/f6589f4a-8830-4bea-a16d-e86e3e4f11a2)
  ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/3bfd6700-6bea-42ab-b7d1-8850735de3ec)
