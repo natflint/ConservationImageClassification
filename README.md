@@ -43,4 +43,6 @@ By looking at these images, we are able to confirm that the model in fact did no
 
 In further investigation from some of the previously reviewed literature, as well as the images taken at different sites around the park, we discovered that in addition to the dense vegetation the the large ratio of sites where the images were taken to the few number of images per each site, likely also played a role in the poorly scoring model. This was supported by Schneider, et al., they talk about how “deep learning models will only reflect locations that were seen during training and will underperform at new locations” (Schneider, et al., 2020). Given that the 17,000 images come from 148 unique sites, there would only be a little over 100 images per site. For creating a deep learning neural network for image classification, this is not a sufficient number of images for a model to train on. So the problem becomes that there are too many unique sites, with not enough images coming from an even distribution of the sites.
 
-
+# References
+Schneider, S., Greenberg, S., Taylor, G. W., & Kremer, S. C. (2020). Three critical factors affecting automated image species recognition performance for camera traps. Ecology and Evolution, 10(7), 3503–3517. https://doi.org/10.1002/ece3.6147
+https://captum.ai/api/guided_grad_cam.html
