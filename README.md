@@ -32,8 +32,15 @@ When the final trained model was applied to the holdout out data, the cross entr
 
 
 # Investigation Using Grad-CAM
+
+Because of the poor score from our final model and throughout the training process, we deciede to investigate using Grad-CAMs. The decision to use Grad-CAMs specifically to see how the dense vegetation from the rainforest model. Due to the dense biodiversity, there is lots of vegetation in the images which animals will blend in with or be obstructed by. To do this, we used the implemented Captum’s GuidedGrad-CAM feature for each class, specifically for the last convolutional layer of our ResNet model, to see what was extracted from images right before they were classified. Below, we have the original images as well as the output of the gradcams layered over the orginal images. 
+
 ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/8319e82a-61a5-45f6-acdf-a9a9418915ac)
 
 ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/a14e7566-9343-460b-8379-26352f9ca224)
+
+By looking at these images, we are able to confirm that the model in fact did not learn the features of the animals, but instead the features of the background and environment. By looking at the images, it can see that for some images the area where the most information was extracted from did not even include the animal, such as for civet genet. For others, we can see that a little bit of information was taken from everywhere in the image, such as antelope duiker. 
+
+In further investigation from some of the previously reviewed literature, as well as the images taken at different sites around the park, we discovered that in addition to the dense vegetation the the large ratio of sites where the images were taken to the few number of images per each site, likely also played a role in the poorly scoring model. This was supported by Schneider, et al., they talk about how “deep learning models will only reflect locations that were seen during training and will underperform at new locations” (Schneider, et al., 2020). Given that the 17,000 images come from 148 unique sites, there would only be a little over 100 images per site. For creating a deep learning neural network for image classification, this is not a sufficient number of images for a model to train on. So the problem becomes that there are too many unique sites, with not enough images coming from an even distribution of the sites.
 
 
