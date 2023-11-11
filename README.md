@@ -20,9 +20,16 @@ As with all camera trap images, there are a number of images where animals are o
 
 # Implemenation and Network Architecture Comparison
 
+Four different common deep learning architectures used successfully for image classification investigaged for these images, based on the literature review, were AlexNet, VGG, GoogLeNet, and ResNet.
 
+For each model architecture we are experimenting with, we tried both the pretrained weights from ImageNet and no pretrained weights, though in the end our final version of each model used the pretrained weights. For each model, the architecture for the first convolutional layer needed to be adjusted for to accept grayscale images, as well as the last layer, for the eight possible output classes. 
 
 # Results
+
+The model with the best training was ResNet. However, it is important to note that in all of these models the different combinations of parameters ran  model would almost bottom out at around the same score. This likely meant the models were hyperfitting the training data.
+
+When the final trained model was applied to the holdout out data, the cross entropy score was 2.0701. This was not a great score, especially for a deep neural network. In further investigation of the holdout data, we discovered the model was consistently classifying each image as a civet genet. This was obviously a poor result, and as we had continously had poor scores through the training process, we decieded to investigate the modle further. 
+
 
 # Investigation Using Grad-CAM
 ![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/8319e82a-61a5-45f6-acdf-a9a9418915ac)
