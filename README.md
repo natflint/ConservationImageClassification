@@ -17,5 +17,8 @@ The lack of true colour images did bring up another issue. Because only about a 
 # Results
 
 # Investigation Using Grad-CAM
+![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/8319e82a-61a5-45f6-acdf-a9a9418915ac)
+
+![image](https://github.com/natflint/ConservationImageClassification/assets/115076736/a14e7566-9343-460b-8379-26352f9ca224)
 
 
